@@ -1,4 +1,4 @@
-package main.java.com.sachkov.game.battleship;
+package main.java;
 
 import java.util.*;
 
