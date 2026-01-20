@@ -1,3 +1,5 @@
+package main.java.com.sachkov.game.battleship;
+
 import java.util.*;
 
 public class DotCom {

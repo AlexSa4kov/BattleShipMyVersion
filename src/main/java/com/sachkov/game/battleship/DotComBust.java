@@ -1,4 +1,5 @@
-import java.lang.reflect.Array;
+package main.java.com.sachkov.game.battleship;
+
 import java.util.*;
 
 
@@ -54,7 +55,7 @@ public class DotComBust {
         System.out.println(result);
     }
 
-    private void finishGame () {
+    private void finishGame() {
         System.out.println("Все сайты потоплены");
         if (numOfGuesses <= 18) {
             System.out.println("Это заняло " + numOfGuesses + " попыток");
@@ -65,7 +66,7 @@ public class DotComBust {
         }
     }
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         DotComBust game = new DotComBust();
         game.setUpGame();
         game.startPlaying();

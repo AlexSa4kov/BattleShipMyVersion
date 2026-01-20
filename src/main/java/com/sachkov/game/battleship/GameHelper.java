@@ -1,3 +1,5 @@
+package main.java.com.sachkov.game.battleship;
+
 import java.io.*;
 import java.util.*;
 
@@ -6,7 +8,7 @@ public class GameHelper {
     private static final String alphabet = "abcdefg";
     private int gridLength = 7;
     private int gridSize = 49;
-    private int [] grid = new int[gridSize];
+    private int[] grid = new int[gridSize];
     private int comCount = 0;
 
     public String getUserInput(String prompt) {
@@ -24,9 +26,9 @@ public class GameHelper {
 
     public ArrayList<String> placeDotCom(int comSize) {
         ArrayList<String> alphaCells = new ArrayList<String>();
-        String [] alphaCoords = new String[comSize];
+        String[] alphaCoords = new String[comSize];
         String temp = null;
-        int [] coords = new int[comSize];
+        int[] coords = new int[comSize];
         int attempts = 0;
         boolean success = false;
         int location = 0;
@@ -49,11 +51,11 @@ public class GameHelper {
                     if (location >= gridSize) {
                         success = false;
                     }
-                    if (x>0 && (location % gridLength) == 0) {
+                    if (x > 0 && (location % gridLength) == 0) {
                         success = false;
                     }
                 } else {
-                    System.out.println("используется" + location);
+                    //System.out.println("используется" + location);
                     success = false;
                 }
             }
