@@ -1,5 +1,4 @@
-package main;
-
+package main.java.com.sachkov.start;
 import java.util.*;
 
 public class DotCom {
@@ -33,3 +32,4 @@ public class DotCom {
         return result;
     }
 }
+

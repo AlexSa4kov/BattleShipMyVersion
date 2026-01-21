@@ -1,8 +1,7 @@
-package main;
+package main.java.com.sachkov.start;
 
-import java.lang.reflect.Array;
+
 import java.util.*;
-
 
 public class DotComBust {
     private GameHelper helper = new GameHelper();
@@ -73,3 +72,4 @@ public class DotComBust {
         game.startPlaying();
     }
 }
+
