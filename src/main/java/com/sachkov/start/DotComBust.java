@@ -4,16 +4,16 @@ package main.java.com.sachkov.start;
 import java.util.*;
 
 public class DotComBust {
-    private main.GameHelper helper = new GameHelper();
-    private ArrayList<main.DotCom> dotComsList = new ArrayList<main.DotCom>();
+    private GameHelper helper = new GameHelper();
+    private ArrayList<DotCom> dotComsList = new ArrayList<DotCom>();
     private int numOfGuesses = 0;
 
     private void setUpGame() {
-        main.DotCom one = new main.DotCom();
+        DotCom one = new DotCom();
         one.setName("Pets.com");
-        main.DotCom two = new main.DotCom();
+        DotCom two = new DotCom();
         two.setName("eToys.com");
-        main.DotCom three = new main.DotCom();
+        DotCom three = new DotCom();
         three.setName("Go2.com");
         dotComsList.add(one);
         dotComsList.add(two);
@@ -23,7 +23,7 @@ public class DotComBust {
         System.out.println("Pets.com, eToys.com, Go2.com");
         System.out.println("Потопи их за минимальное количество попыток");
 
-        for (main.DotCom dotComToSet : dotComsList) {
+        for (DotCom dotComToSet : dotComsList) {
             ArrayList<String> newLocation = helper.placeDotCom(3);
             dotComToSet.setLocationCells(newLocation);
         }
@@ -67,7 +67,7 @@ public class DotComBust {
     }
 
     public static void main(String[] args) {
-        main.DotComBust game = new main.DotComBust();
+        DotComBust game = new DotComBust();
         game.setUpGame();
         game.startPlaying();
     }

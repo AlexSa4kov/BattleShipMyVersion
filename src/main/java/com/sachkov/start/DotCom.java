@@ -1,5 +1,4 @@
 package main.java.com.sachkov.start;
-
 import java.util.*;
 
 public class DotCom {
