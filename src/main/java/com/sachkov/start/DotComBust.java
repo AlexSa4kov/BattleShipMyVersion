@@ -1,20 +1,19 @@
-package main;
+package main.java.com.sachkov.start;
 
-import java.lang.reflect.Array;
+
 import java.util.*;
 
-
 public class DotComBust {
-    private GameHelper helper = new GameHelper();
-    private ArrayList<DotCom> dotComsList = new ArrayList<DotCom>();
+    private main.GameHelper helper = new GameHelper();
+    private ArrayList<main.DotCom> dotComsList = new ArrayList<main.DotCom>();
     private int numOfGuesses = 0;
 
     private void setUpGame() {
-        DotCom one = new DotCom();
+        main.DotCom one = new main.DotCom();
         one.setName("Pets.com");
-        DotCom two = new DotCom();
+        main.DotCom two = new main.DotCom();
         two.setName("eToys.com");
-        DotCom three = new DotCom();
+        main.DotCom three = new main.DotCom();
         three.setName("Go2.com");
         dotComsList.add(one);
         dotComsList.add(two);
@@ -24,7 +23,7 @@ public class DotComBust {
         System.out.println("Pets.com, eToys.com, Go2.com");
         System.out.println("Потопи их за минимальное количество попыток");
 
-        for (DotCom dotComToSet : dotComsList) {
+        for (main.DotCom dotComToSet : dotComsList) {
             ArrayList<String> newLocation = helper.placeDotCom(3);
             dotComToSet.setLocationCells(newLocation);
         }
@@ -68,8 +67,9 @@ public class DotComBust {
     }
 
     public static void main(String[] args) {
-        DotComBust game = new DotComBust();
+        main.DotComBust game = new main.DotComBust();
         game.setUpGame();
         game.startPlaying();
     }
 }
+

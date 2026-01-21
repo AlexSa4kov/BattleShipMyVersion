@@ -1,4 +1,5 @@
-package main;
+package main.java.com.sachkov.start;
+
 
 import java.io.*;
 import java.util.*;
@@ -79,3 +80,5 @@ public class GameHelper {
 
     }
 }
+
+
